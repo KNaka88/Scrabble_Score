@@ -2,13 +2,13 @@
 
     require_once "src/Scrabble-Score.php";
 
-    class CanAttack_test extends PHPUnit_Framework_TestCase
+    class ScrabbleScore_test extends PHPUnit_Framework_TestCase
     {
 
         function test_scrabbleScore_()
         {
             //Arrange
-            $user_input = "word";
+            $user_input = "art";
             $test_calculateScore = new ScrabbleScore($user_input);
 
 
@@ -16,7 +16,7 @@
             $result = $test_calculateScore->calculateScore();
 
             //Assert
-            $this->assertEquals(8, $result);
+            $this->assertEquals(3, $result);
 
         }
 
